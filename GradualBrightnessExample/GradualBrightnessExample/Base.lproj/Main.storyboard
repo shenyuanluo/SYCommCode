@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O5N-NY-s1Y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="bcx-pY-dga">
+            <objects>
+                <navigationController id="O5N-NY-s1Y" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zkx-1Z-ZaU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KVN-5T-R3T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Vi-Bv-VlM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-809" y="79"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ8-OK-zzi">
+                                <rect key="frame" x="118.5" y="318" width="138" height="30"/>
+                                <state key="normal" title="跳转至亮度渐变页面"/>
+                                <connections>
+                                    <segue destination="F3k-Wb-GdO" kind="push" id="PKz-9z-0rp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jZ8-OK-zzi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0SH-Jg-SsR"/>
+                            <constraint firstItem="jZ8-OK-zzi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2lW-DT-n65"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="91G-vI-0sp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="79"/>
+        </scene>
+        <!--Gradual Brightness View Controller-->
+        <scene sceneID="czO-yl-GDT">
+            <objects>
+                <viewController id="F3k-Wb-GdO" customClass="GradualBrightnessViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H8w-VG-VTF"/>
+                        <viewControllerLayoutGuide type="bottom" id="h5U-er-ZeS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FUs-Mv-bIE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QRCode.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8ed-UF-dJq">
+                                <rect key="frame" x="28" y="104" width="319" height="319"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8ed-UF-dJq" secondAttribute="height" multiplier="1:1" id="NvU-mG-pMr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="二维码扫描需要增加屏幕亮度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbv-lx-yhx">
+                                <rect key="frame" x="74.5" y="443" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tbv-lx-yhx" firstAttribute="centerX" secondItem="FUs-Mv-bIE" secondAttribute="centerX" id="AU1-Mw-lF0"/>
+                            <constraint firstItem="8ed-UF-dJq" firstAttribute="width" secondItem="FUs-Mv-bIE" secondAttribute="width" multiplier="0.85" id="LIN-7v-87c"/>
+                            <constraint firstItem="8ed-UF-dJq" firstAttribute="top" secondItem="H8w-VG-VTF" secondAttribute="bottom" constant="40" id="VCp-8n-YGR"/>
+                            <constraint firstItem="8ed-UF-dJq" firstAttribute="centerX" secondItem="FUs-Mv-bIE" secondAttribute="centerX" id="XZe-4i-P9d"/>
+                            <constraint firstItem="tbv-lx-yhx" firstAttribute="top" secondItem="8ed-UF-dJq" secondAttribute="bottom" constant="20" id="ptc-Ou-Yk3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Ud-kG-ql1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ul-P5-7ub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="QRCode.jpg" width="268" height="268"/>
+    </resources>
+</document>

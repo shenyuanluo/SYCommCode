@@ -1,0 +1,21 @@
+//
+//  GradualBrightnessExamplePrefix.pch
+//  GradualBrightnessExample
+//
+//  Created by shenyuanluo on 2017/12/7.
+//  Copyright © 2017年 shenyuanluo. All rights reserved.
+//
+
+#ifndef GradualBrightnessExamplePrefix_pch
+#define GradualBrightnessExamplePrefix_pch
+
+
+#import "GradualBrightness.h"
+
+
+#define CUSTOM_BRIGHTNESS_VAULE 0.8f
+
+#define IS_NEED_CHANGE_BRIGHTNESS @"isNeedChangeBrightness"
+
+
+#endif /* GradualBrightnessExamplePrefix_pch */
