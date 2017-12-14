@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lzl-V1-qg1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="654-xw-WPD">
+            <objects>
+                <navigationController id="lzl-V1-qg1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xjW-WE-z1a">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jlb-9V-9Qi" kind="relationship" relationship="rootViewController" id="6wU-5H-SJk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVp-3s-YfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1236" y="-63"/>
+        </scene>
+        <!--Base View Controller-->
+        <scene sceneID="GxZ-ZH-hS8">
+            <objects>
+                <viewController id="jlb-9V-9Qi" customClass="BaseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ac-I4-oeD"/>
+                        <viewControllerLayoutGuide type="bottom" id="0q8-U2-Fpm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eE5-rr-j1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4V-ex-XpM">
+                                <rect key="frame" x="99" y="298.5" width="177" height="30"/>
+                                <state key="normal" title="Xib布局动态计算 cell 高度"/>
+                                <connections>
+                                    <segue destination="h00-FV-QvW" kind="show" id="YpI-jj-j1n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIV-oa-wbt">
+                                <rect key="frame" x="80.5" y="338.5" width="214" height="30"/>
+                                <state key="normal" title="Masonry布局动态计算 cell 高度"/>
+                                <connections>
+                                    <segue destination="nhY-jU-oVZ" kind="show" id="sHB-xI-K22"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RIV-oa-wbt" firstAttribute="centerY" secondItem="eE5-rr-j1Z" secondAttribute="centerY" constant="20" id="NJ7-6t-hDh"/>
+                            <constraint firstItem="RIV-oa-wbt" firstAttribute="centerX" secondItem="eE5-rr-j1Z" secondAttribute="centerX" id="TPM-9O-Tbi"/>
+                            <constraint firstItem="q4V-ex-XpM" firstAttribute="centerY" secondItem="eE5-rr-j1Z" secondAttribute="centerY" constant="-20" id="YNT-Zs-rnz"/>
+                            <constraint firstItem="q4V-ex-XpM" firstAttribute="centerX" secondItem="eE5-rr-j1Z" secondAttribute="centerX" id="pDi-54-1sK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Kw-VJ-MKA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGn-RP-xrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-465" y="-63"/>
+        </scene>
+        <!--Xib Auto Height View Controller-->
+        <scene sceneID="FDq-e0-2uL">
+            <objects>
+                <viewController id="h00-FV-QvW" customClass="XibAutoHeightViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jTg-AJ-gVP"/>
+                        <viewControllerLayoutGuide type="bottom" id="WBB-e5-uex"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r6Z-8Q-mLB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EFv-9Z-WSp">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="h00-FV-QvW" id="Ra7-7L-YRy"/>
+                                    <outlet property="delegate" destination="h00-FV-QvW" id="txv-81-Bgs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EFv-9Z-WSp" firstAttribute="top" secondItem="jTg-AJ-gVP" secondAttribute="bottom" id="8TG-LX-2ia"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EFv-9Z-WSp" secondAttribute="trailing" constant="-16" id="8uq-lU-CmS"/>
+                            <constraint firstItem="WBB-e5-uex" firstAttribute="top" secondItem="EFv-9Z-WSp" secondAttribute="bottom" id="JGe-UK-ZfG"/>
+                            <constraint firstItem="EFv-9Z-WSp" firstAttribute="leading" secondItem="r6Z-8Q-mLB" secondAttribute="leadingMargin" constant="-16" id="XyC-FN-4Qw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="xibTableView" destination="EFv-9Z-WSp" id="lxi-Un-HJN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92N-0g-qy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="-462.8185907046477"/>
+        </scene>
+        <!--Masonry Auto Height View Controller-->
+        <scene sceneID="2Py-rX-pLR">
+            <objects>
+                <viewController id="nhY-jU-oVZ" customClass="MasonryAutoHeightViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vh9-sQ-vow"/>
+                        <viewControllerLayoutGuide type="bottom" id="QQg-4v-C3T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qmd-73-8zM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j78-fm-MF0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nhY-jU-oVZ" id="n65-2r-QyL"/>
+                                    <outlet property="delegate" destination="nhY-jU-oVZ" id="lNK-DQ-3YD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j78-fm-MF0" firstAttribute="top" secondItem="Vh9-sQ-vow" secondAttribute="bottom" id="BWh-PK-wwR"/>
+                            <constraint firstItem="j78-fm-MF0" firstAttribute="leading" secondItem="Qmd-73-8zM" secondAttribute="leadingMargin" constant="-16" id="KU5-Qi-h2q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j78-fm-MF0" secondAttribute="trailing" constant="-16" id="Uef-UN-nu8"/>
+                            <constraint firstItem="QQg-4v-C3T" firstAttribute="top" secondItem="j78-fm-MF0" secondAttribute="bottom" id="pRE-Ym-TWk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="masonryTableView" destination="j78-fm-MF0" id="CJb-vE-QS4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLW-NJ-r2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="238.83058470764618"/>
+        </scene>
+    </scenes>
+</document>

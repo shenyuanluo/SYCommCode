@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="235" id="KGk-i7-Jjw" customClass="XibListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="235"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="234.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portrait" translatesAutoresizingMaskIntoConstraints="NO" id="dci-bI-ygp">
+                        <rect key="frame" x="18" y="18" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dci-bI-ygp" secondAttribute="height" multiplier="1:1" id="jLE-DR-DrO"/>
+                            <constraint firstAttribute="width" constant="40" id="yxi-Gr-rWK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ShenYuanLuo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bad-re-JIL" userLabel="nickNameLabel">
+                        <rect key="frame" x="68" y="18" width="94" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="GIe-8a-iLn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-12-11 23:27:27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fym-PV-NMi" userLabel="timeLabel">
+                        <rect key="frame" x="68" y="38.5" width="133" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqz-JV-oNJ" userLabel="closeButton">
+                        <rect key="frame" x="389" y="18" width="20" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Nqz-JV-oNJ" secondAttribute="height" multiplier="4:3" id="jD1-Zo-Xo9"/>
+                            <constraint firstAttribute="width" constant="20" id="u90-cW-qAT"/>
+                        </constraints>
+                        <state key="normal" image="close"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3h-pn-8yY" userLabel="followButton">
+                        <rect key="frame" x="339" y="18" width="40" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="FOe-gW-sLC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="关注">
+                            <color key="titleColor" red="1" green="0.4607341955" blue="0.42827015169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncu-kv-aKY" userLabel="descLabel">
+                        <rect key="frame" x="18" y="68" width="391" height="118.5"/>
+                        <string key="text">Siri 让你能够利用语音来完成发送信息、安排会议、查看最新比分等更多事务。只要说出你想做的事，Siri 就能帮你办到。Siri 可以听懂你说的话、知晓你的心意，甚至还能有所回应。iOS 7 中的 Siri 拥有新外观、新声音和新功能。它的界面经过重新设计，以淡入视图浮现于任意屏幕画面的最上层。Siri 回答问题的速度更快</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMq-9g-tBq" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="193.5" width="427" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="BnV-SJ-Mnb"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0Z-fS-mck" userLabel="likeButton">
+                        <rect key="frame" x="18" y="196.5" width="130.5" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="10万" image="like">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQH-1g-sLu" userLabel="commentButton">
+                        <rect key="frame" x="148.5" y="196.5" width="130.5" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="1.5万" image="comment">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GU-Kd-iDL" userLabel="shareButton">
+                        <rect key="frame" x="278.5" y="196.5" width="130.5" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="2万" image="share">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzP-KU-hYu" userLabel="separatorLineView">
+                        <rect key="frame" x="0.0" y="231" width="427" height="4"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="YzJ-co-j2C"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fym-PV-NMi" firstAttribute="height" secondItem="Bad-re-JIL" secondAttribute="height" id="2AX-qA-QlA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Nqz-JV-oNJ" secondAttribute="trailing" constant="10" id="2cC-Hh-svS"/>
+                    <constraint firstItem="6GU-Kd-iDL" firstAttribute="width" secondItem="wQH-1g-sLu" secondAttribute="width" id="2gc-XC-d5v"/>
+                    <constraint firstItem="ncu-kv-aKY" firstAttribute="top" secondItem="dci-bI-ygp" secondAttribute="bottom" constant="10" id="5dE-Di-XxN"/>
+                    <constraint firstItem="wQH-1g-sLu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="DYl-us-shU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ncu-kv-aKY" secondAttribute="trailing" constant="10" id="EZy-xU-lZf"/>
+                    <constraint firstItem="6GU-Kd-iDL" firstAttribute="centerY" secondItem="wQH-1g-sLu" secondAttribute="centerY" id="IDV-vp-K1g"/>
+                    <constraint firstItem="Fym-PV-NMi" firstAttribute="top" secondItem="Bad-re-JIL" secondAttribute="bottom" id="IWa-mU-jpP"/>
+                    <constraint firstItem="Nqz-JV-oNJ" firstAttribute="top" secondItem="dci-bI-ygp" secondAttribute="top" id="JND-qd-LhD"/>
+                    <constraint firstItem="O3h-pn-8yY" firstAttribute="height" secondItem="Nqz-JV-oNJ" secondAttribute="height" id="LQ7-Q9-Iuu"/>
+                    <constraint firstItem="wQH-1g-sLu" firstAttribute="height" secondItem="M0Z-fS-mck" secondAttribute="height" id="QUv-ns-Ox1"/>
+                    <constraint firstItem="wQH-1g-sLu" firstAttribute="width" secondItem="M0Z-fS-mck" secondAttribute="width" id="Twu-3N-NAe"/>
+                    <constraint firstItem="M0Z-fS-mck" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3333" constant="-12" id="VO0-0I-4IC"/>
+                    <constraint firstItem="Nqz-JV-oNJ" firstAttribute="leading" secondItem="O3h-pn-8yY" secondAttribute="trailing" constant="10" id="Vjf-qq-8Ns"/>
+                    <constraint firstItem="6GU-Kd-iDL" firstAttribute="height" secondItem="wQH-1g-sLu" secondAttribute="height" id="dhK-GI-GGZ"/>
+                    <constraint firstItem="dci-bI-ygp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="e2w-EJ-AZB"/>
+                    <constraint firstItem="Bad-re-JIL" firstAttribute="leading" secondItem="dci-bI-ygp" secondAttribute="trailing" constant="10" id="ejm-Ot-pru"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="M0Z-fS-mck" secondAttribute="bottom" id="iIS-1D-cHf"/>
+                    <constraint firstItem="O3h-pn-8yY" firstAttribute="centerY" secondItem="Nqz-JV-oNJ" secondAttribute="centerY" id="jrw-SW-Vof"/>
+                    <constraint firstItem="wQH-1g-sLu" firstAttribute="centerY" secondItem="M0Z-fS-mck" secondAttribute="centerY" id="kHf-KN-Emw"/>
+                    <constraint firstItem="M0Z-fS-mck" firstAttribute="top" secondItem="fMq-9g-tBq" secondAttribute="bottom" constant="2" id="nhb-kL-Bj3"/>
+                    <constraint firstItem="dci-bI-ygp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="o5l-Gj-SXz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ncu-kv-aKY" secondAttribute="bottom" constant="40" id="qWE-eh-ykq"/>
+                    <constraint firstItem="M0Z-fS-mck" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="thw-Ro-eQG"/>
+                    <constraint firstItem="Bad-re-JIL" firstAttribute="top" secondItem="dci-bI-ygp" secondAttribute="top" id="vQt-Xg-Q7T"/>
+                    <constraint firstItem="M0Z-fS-mck" firstAttribute="top" secondItem="ncu-kv-aKY" secondAttribute="bottom" constant="10" id="vlW-fp-bSm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6GU-Kd-iDL" secondAttribute="trailing" constant="10" id="wR6-Yy-RIt"/>
+                    <constraint firstItem="ncu-kv-aKY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="wZ7-vS-lmu"/>
+                    <constraint firstItem="Fym-PV-NMi" firstAttribute="leading" secondItem="Bad-re-JIL" secondAttribute="leading" id="whr-Nr-r7s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BzP-KU-hYu" secondAttribute="bottom" id="9Yx-bu-zlQ"/>
+                <constraint firstAttribute="trailing" secondItem="BzP-KU-hYu" secondAttribute="trailing" id="AyP-vj-ndh"/>
+                <constraint firstItem="fMq-9g-tBq" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="Kn0-Vs-VLE"/>
+                <constraint firstAttribute="trailing" secondItem="fMq-9g-tBq" secondAttribute="trailing" id="lSu-kk-dWw"/>
+                <constraint firstItem="BzP-KU-hYu" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="oLe-kT-cRg"/>
+            </constraints>
+            <connections>
+                <outlet property="closeButton" destination="Nqz-JV-oNJ" id="bIs-z1-4df"/>
+                <outlet property="commentButton" destination="wQH-1g-sLu" id="zqO-df-JEO"/>
+                <outlet property="descLabel" destination="ncu-kv-aKY" id="W0B-Rd-TvZ"/>
+                <outlet property="followButton" destination="O3h-pn-8yY" id="Qco-zZ-DGx"/>
+                <outlet property="iconImageView" destination="dci-bI-ygp" id="x1e-Cg-f9Q"/>
+                <outlet property="likeButton" destination="M0Z-fS-mck" id="O6O-KL-X7a"/>
+                <outlet property="lineView" destination="fMq-9g-tBq" id="haY-Ms-wIB"/>
+                <outlet property="nickNameLabel" destination="Bad-re-JIL" id="cHb-eV-Xwg"/>
+                <outlet property="separatorView" destination="BzP-KU-hYu" id="x5g-0y-wZd"/>
+                <outlet property="shareButton" destination="6GU-Kd-iDL" id="xFJ-ET-ASd"/>
+                <outlet property="timeLabel" destination="Fym-PV-NMi" id="wPa-Jg-MBU"/>
+            </connections>
+            <point key="canvasLocation" x="232.5" y="148.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="close" width="27" height="20"/>
+        <image name="comment" width="20" height="20"/>
+        <image name="like" width="20" height="20"/>
+        <image name="portrait" width="80" height="80"/>
+        <image name="share" width="20" height="20"/>
+    </resources>
+</document>

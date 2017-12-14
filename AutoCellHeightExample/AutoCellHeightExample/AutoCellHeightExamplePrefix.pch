@@ -1,0 +1,18 @@
+//
+//  AutoCellHeightExamplePrefix.pch
+//  AutoCellHeightExample
+//
+//  Created by shenyuanluo on 2017/12/12.
+//  Copyright © 2017年 http://blog.shenyuanluo.com/ All rights reserved.
+//
+
+#ifndef AutoCellHeightExamplePrefix_pch
+#define AutoCellHeightExamplePrefix_pch
+
+#define BG_COLOR ([UIColor colorWithRed:243.0f/255.0f green:246.0f/255.0f blue:249.0f/255.0f alpha:1.0f])
+
+#define LINE_COLOR ([UIColor colorWithRed:239.0f/255.0f green:239.0f/255.0f blue:239.0f/255.0f alpha:1.0f])
+
+#define MARGIN 10.0f
+
+#endif /* AutoCellHeightExamplePrefix_pch */
