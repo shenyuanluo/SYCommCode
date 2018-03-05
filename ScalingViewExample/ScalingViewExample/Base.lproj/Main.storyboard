@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSL-Mh-Crw">
+                                <rect key="frame" x="0.0" y="55" width="320" height="180"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HSL-Mh-Crw" secondAttribute="height" multiplier="16:9" id="Sb5-lK-cEn"/>
+                                    <constraint firstAttribute="width" constant="320" id="viA-c2-4Jb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vk-Xh-Gwj">
+                                <rect key="frame" x="70" y="245" width="180" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3vk-Xh-Gwj" secondAttribute="height" multiplier="9:16" id="Lzb-xh-l74"/>
+                                    <constraint firstAttribute="height" constant="320" id="Uoh-eE-33r"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRB-JZ-apJ">
+                                <rect key="frame" x="244" y="20" width="60" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.84529810220000001" blue="0.9976550233" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="dlV-fx-6KK"/>
+                                    <constraint firstAttribute="height" constant="30" id="qsl-fj-dri"/>
+                                </constraints>
+                                <state key="normal" title="刷新"/>
+                                <connections>
+                                    <action selector="refreshBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RM7-7f-xzO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HSL-Mh-Crw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Xw-qU-HKK"/>
+                            <constraint firstItem="SRB-JZ-apJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2QA-h8-tTa"/>
+                            <constraint firstItem="3vk-Xh-Gwj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8cU-JV-uvL"/>
+                            <constraint firstItem="HSL-Mh-Crw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="ED1-d7-6Rz"/>
+                            <constraint firstItem="3vk-Xh-Gwj" firstAttribute="top" secondItem="HSL-Mh-Crw" secondAttribute="bottom" constant="10" id="Mtc-Z2-tDJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SRB-JZ-apJ" secondAttribute="trailing" id="fKx-KA-I0S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showView1" destination="HSL-Mh-Crw" id="ppn-MT-BJt"/>
+                        <outlet property="showView2" destination="3vk-Xh-Gwj" id="4ri-pt-vBL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
