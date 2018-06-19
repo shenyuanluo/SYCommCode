@@ -34,22 +34,22 @@
     {
         return resultRect;
     }
-    CGFloat subDivisor = parentSize.width / parentSize.height;    // 子视图比例因子（宽/高）
-    CGFloat parentDivisor = subSize.width / subSize.height;       // 父视图比例因子（宽/高）
+    CGFloat pDivisor = parentSize.width / parentSize.height;    // 父视图比例因子（宽/高）
+    CGFloat sDivisor = subSize.width / subSize.height;          // 子视图比例因子（宽/高）
     
     CGFloat resultH;
     CGFloat resultW;
     CGPoint originP;
     
-    if (subDivisor > parentDivisor )        // 等高缩放
+    if (sDivisor < pDivisor )        // 等高缩放
     {
         resultH = parentSize.height;
-        resultW = resultH * parentDivisor;
+        resultW = resultH * sDivisor;
     }
-    else if ( subDivisor < parentDivisor)   // 等宽缩放
+    else if ( sDivisor > pDivisor)   // 等宽缩放
     {
         resultW = parentSize.width;
-        resultH = resultW / parentDivisor;
+        resultH = resultW / sDivisor;
     }
     
     else    // 等比例缩放
