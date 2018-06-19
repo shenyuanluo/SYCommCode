@@ -46,8 +46,10 @@ static NSString * const kMasonryCellId = @"masonryCellId";
 - (void)configTableView
 {
     self.automaticallyAdjustsScrollViewInsets = NO;
-    [self.masonryTableView registerNib:[UINib nibWithNibName:NSStringFromClass([MasonryListTableViewCell class])
-                                                      bundle:nil]
+    NSString *nibName = NSStringFromClass([MasonryListTableViewCell class]);
+    UINib *tbNib = [UINib nibWithNibName:nibName
+                                  bundle:nil];
+    [self.masonryTableView registerNib:tbNib
                 forCellReuseIdentifier:kMasonryCellId];
     self.masonryTableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
     self.masonryTableView.backgroundColor = BG_COLOR;

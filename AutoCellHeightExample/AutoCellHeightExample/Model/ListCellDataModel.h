@@ -10,12 +10,12 @@
 
 @interface ListCellDataModel : NSObject
 
-@property (nonatomic, copy) UIImage *icon;
-@property (nonatomic, copy) NSString *nickName;
-@property (nonatomic, copy) NSString *publishTime;
-@property (nonatomic, copy) NSString *desc;
-@property (nonatomic, copy) NSString *likeCount;
-@property (nonatomic, copy) NSString *commentCount;
-@property (nonatomic, copy) NSString *shareCount;
+@property (nonatomic, copy) UIImage *icon;          // 头像
+@property (nonatomic, copy) NSString *nickName;     // 昵称
+@property (nonatomic, copy) NSString *publishTime;  // 发布时间
+@property (nonatomic, copy) NSString *desc;         // 内容详情
+@property (nonatomic, copy) NSString *likeCount;    // 赞数量
+@property (nonatomic, copy) NSString *commentCount; // 评论数量
+@property (nonatomic, copy) NSString *shareCount;   // 分享数量
 
 @end
